@@ -18,10 +18,10 @@ public:
 	size_t count() {}
 
 	// Gets the object at specified index.
-	Object* get(size_t idx) {}
+	CellObject* get(size_t idx) {}
 
 	// Removes and returns object at specified index.
-	Object* remove(size_t idx) {}
+	CellObject* remove(size_t idx) {}
 }
 
 
