@@ -12,10 +12,8 @@
  * An immutable String class representing a char*
   Altered from chasebish's String interface.
  * author: chasebish */
-class String : public CellObject {
+class String : public Object {
 public:
-  char* c;
-
   /** CONSTRUCTORS & DESTRUCTORS **/
 
   /* Default String constructor */
@@ -33,7 +31,7 @@ public:
   /* Clears String from memory */
   ~String() {
   }
-
+  
 
   /** INHERITED METHODS **/
 
@@ -41,7 +39,7 @@ public:
   size_t hash() {
   }
 
-  /* Inherited from Object, checks equality between an String and an Object */
+  /* Inherited from Object, checks equality between a String and an Object */
   bool equals(Object* const obj) {
   }
 

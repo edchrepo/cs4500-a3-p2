@@ -7,14 +7,15 @@
  * A class that represents the top of the object hierarchy.
    Altered from chasebish's Object interface.
  * author: chasebish */
-class CellObject {
+class Object {
 public:
 
-  CellObject() {
+  /* Default Object constructor */
+  Object() {
   }
 
   /* Default Object destructor, to be overriden by subclasses */
-  virtual ~CellObject() { }
+  virtual ~Object() { }
 
 
   /** VIRTUAL METHODS **/
