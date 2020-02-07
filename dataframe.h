@@ -45,11 +45,11 @@ public:
 	Object* get(const char* rname, const char* cname) {
 	}
 
-	// Gets the name of the given row index.
+	// Gets the name of the specified row index.
 	char* row_name(size_t r) {
 	}
 	
-	// Gets the name of the given column index.
+	// Gets the name of the specified column index.
 	char* col_name(size_t c) {
 	}
 
