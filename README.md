@@ -22,5 +22,6 @@ frame.addEntry(50, "hey");
 ```
 
 `frame.get(4, 1);` -> 2
+
 `frame.get(5, 2);` -> "hey"
 
