@@ -27,7 +27,7 @@ public:
   }
 
   // Returns this IntObject as a string.
-	String* to_string() {}
+	char* to_string() {}
 
 
 	/** INHERITED METHODS **/
@@ -63,7 +63,7 @@ public:
   }
 
   // Returns this BoolObject as a string.
-	String* to_string() {}
+	char* to_string() {}
 
 
 	/** INHERITED METHODS **/

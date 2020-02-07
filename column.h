@@ -12,6 +12,10 @@ public:
 	// Default constructor for column.
 	Column() {}
 
+	// Constructor for passing in specified objects.
+	Column(Object* o, ...) {
+	}
+
 	// Default destructor.
 	virtual ~Column() {}
 
@@ -44,6 +48,10 @@ public:
 	// Default constructor for StringColumn.
 	StringColumn() {}
 
+	// Constructor for passing in specified strings.
+	StringColumn(String* s, ...) {
+	}
+
 	// Default destructor.
 	~StringColumn() {}
 
@@ -60,7 +68,7 @@ public:
 	String* remove(size_t idx) {}
 
 	// Returns the column as a string.
-	String* to_string() {}
+	char* to_string() {}
 }
 
 
@@ -70,20 +78,25 @@ public:
 	// Default constructor for IntColumn.
 	IntColumn() {}
 
+	// Constructor for passing in specified ints.
+	// This will convert the ints into IntObjects and store them accordingly
+	IntColumn(int i, ...) {
+	}
+
 	// Default destructor.
 	~IntColumn() {}
 
-	// Puts the specified IntObject at the specified index.
-	void set(IntObject* i, size_t idx) {}
+	// Puts the specified int at the specified index as an IntObject.
+	void set(int i, size_t idx) {}
 
-	// Adds the specified IntObject at the end of the column.
-	void push_back(IntObject* i, size_t idx) {}
+	// Adds the specified int at the end of the column as an IntObject.
+	void push_back(int i, size_t idx) {}
 
-	// Gets the IntObject at specified index.
-	IntObject* get(size_t idx) {}
+	// Gets the IntObject at specified index as an int.
+	int get(size_t idx) {}
 
-	// Removes and returns the IntObject at specified index.
-	IntObject* remove(size_t idx) {}
+	// Removes the IntObject at specified index and returns it as an int.
+	int remove(size_t idx) {}
 
 	// Gets the sum of this column.
 	int sum() {}
@@ -92,7 +105,7 @@ public:
 	int product() {}
 
 	// Returns the column as a string.
-	String* to_string() {}
+	char* to_string() {}
 }
 
 
@@ -102,21 +115,26 @@ public:
 	// Default constructor for BoolColumn.
 	BoolColumn() {}
 
+	// Constructor for passing in specified booleans.
+	// This will convert the bools into BoolObjects and store them accordingly
+	BoolColumn(bool b, ...) {
+	}
+
 	// Default destructor.
 	~BoolColumn() {}
 
-	// Puts the specified BoolObject at the specified index as a BoolObject.
-	void set(BoolObject* b, size_t idx) {}
+	// Puts the specified bool at the specified index as a BoolObject.
+	void set(bool b, size_t idx) {}
 
-	// Adds the specified BoolObject at the end of the column as a BoolObject.
-	void push_back(BoolObject* b, size_t idx) {}
+	// Adds the specified bool at the end of the column as a BoolObject.
+	void push_back(bool b, size_t idx) {}
 
-	// Gets the BoolObject at specified index.
-	BoolObject* get(size_t idx) {}
+	// Gets the BoolObject at specified index as a bool.
+	bool get(size_t idx) {}
 
-	// Removes and returns the BoolObject at specified index.
-	BoolObject* remove(size_t idx) {}
+	// Removes the BoolObject at specified index and returns it as a bool.
+	bool remove(size_t idx) {}
 
 	// Returns the column as a string.
-	String* to_string() {}
+	char* to_string() {}
 }
