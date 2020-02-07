@@ -19,9 +19,8 @@ str_column = new StringColumn("hi", "bye", "hello", "goodbye");
 
 frame.addAll(int_column, str_column);
 frame.addEntry(50, "hey");
+		
+frame.get(4, 1); -> 2
+frame.get(5, 2); -> "hey"
 ```
-
-`frame.get(4, 1);` -> 2
-
-`frame.get(5, 2);` -> "hey"
 
